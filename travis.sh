@@ -7,9 +7,9 @@ if [[ -n "$CF_PASSWORD" ]]; then
   echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
   sudo apt-get update
   sudo apt-get install cf-cli
-  CF_APP=Evo-Api-FoodYeah
-  CF_USERNAME=u201819681@upc.edu.pe
-  CF_ORGANIZATION=u201819681@upc.edu.pe
+  CF_APP=FoodYeahMoviles
+  CF_USERNAME=raulinomackayr@upc.edu.pe
+  CF_ORGANIZATION=raulinomackayr@upc.edu.pe
   CF_SPACE=dev
   echo $CF_APP
   echo $CF_USERNAME
