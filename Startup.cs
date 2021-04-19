@@ -82,7 +82,13 @@ namespace FoodYeah
             services.AddTransient<CardService, CardServiceImpl>();
             services.AddTransient<QuoteService, QuoteServiceImpl>();
             services.AddTransient<Product_CategoryService, Product_CategoryServiceImpl>();    
-            services.AddTransient<Customer_CategoryService, Customer_CategoryServiceImpl>();  
+            services.AddTransient<Customer_CategoryService, Customer_CategoryServiceImpl>();
+            services.AddSwaggerGen(c=>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "FoodGo", Version = "2.0" });
+                
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -93,6 +99,12 @@ namespace FoodYeah
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
             app.UseRouting();
             app.UseCors("Cors");
             app.UseAuthorization();
@@ -101,6 +113,7 @@ namespace FoodYeah
             {
                 endpoints.MapControllers();
             });
+          
         }
     }
 }

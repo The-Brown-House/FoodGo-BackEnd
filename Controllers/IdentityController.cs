@@ -19,6 +19,7 @@ using static FoodYeah.Commons.Enums;
 
 namespace FoodYeah.Controllers
 {
+    [ApiExplorerSettings(IgnoreApi = true)]
     [ApiController]
     [Route("identity")]
     public class IdentityController : ControllerBase

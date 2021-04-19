@@ -1569,7 +1569,6 @@ D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\FoodYeah.dll
 D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\FoodYeah.pdb
 D:\Cursos\Finanzas\FutureMarket\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Cursos\Finanzas\FutureMarket\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Cursos\Finanzas\FutureMarket\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\Cursos\Finanzas\FutureMarket\bin\Debug\netcoreapp3.1\FoodYeah.exe
 D:\Cursos\Finanzas\FutureMarket\bin\Debug\netcoreapp3.1\FoodYeah.deps.json
 D:\Cursos\Finanzas\FutureMarket\bin\Debug\netcoreapp3.1\FoodYeah.runtimeconfig.json
@@ -1730,3 +1729,4 @@ D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\FoodYeah.csproj.CopyComp
 D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\staticwebassets\FoodYeah.StaticWebAssets.Manifest.cache
 D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\staticwebassets\FoodYeah.StaticWebAssets.xml
 D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\FoodYeah.genruntimeconfig.cache
+D:\Cursos\Finanzas\FutureMarket\obj\Debug\netcoreapp3.1\scopedcss\bundle\FoodYeah.styles.css
