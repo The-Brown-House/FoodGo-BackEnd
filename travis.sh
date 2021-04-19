@@ -8,8 +8,8 @@ if [[ -n "$CF_PASSWORD" ]]; then
   sudo apt-get update
   sudo apt-get install cf-cli
   CF_APP=FoodYeahMoviles
-  CF_USERNAME=raulinomackayr@upc.edu.pe
-  CF_ORGANIZATION=raulinomackayr@upc.edu.pe
+  CF_USERNAME=raulinomackayr@hotmail.com
+  CF_ORGANIZATION=raulinomackayr@hotmail.com
   CF_SPACE=dev
   echo $CF_APP
   echo $CF_USERNAME
