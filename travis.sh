@@ -11,7 +11,7 @@ if [[ -n "$CF_PASSWORD" ]]; then
   CF_USERNAME=raulinomackayr@hotmail.com
   CF_ORGANIZATION=raulinomackayr@hotmail.com
   CF_SPACE=dev
-  echo $CF_APP
+  echo $CF_APP	
   echo $CF_USERNAME
   echo $CF_PASSWORD
   echo $CF_ORGANIZATION
