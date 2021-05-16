@@ -3,7 +3,7 @@ mono: none
 dist: xenial
 dotnet: 3.1
 install:
-  - dotnet restore
+  - dotnet restore /home/travis/build/The-Brown-House/FoodYeah-BackEnd/FoodYeah.csproj
 script:
   - dotnet build
 before_deploy:
