@@ -57,7 +57,7 @@ namespace FoodYeah.Controllers
             var result = await _userManager.CreateAsync(user, model.Password);
             //A base del email definimos si el usuario va a ser user o admin:
             string userRole;
-            if (model.Email.EndsWith("foodgo.com"))
+            if (model.Email.EndsWith("foodyeah.com"))
             {
                 userRole = RoleHelper.Admin;
                 _customerService.Create(new CustomerCreateDto { CustomerName = user.FirstName, CustomerLastName=user.LastName, Customer_CategoryId = 1, CustomerAge = 0, Email = user.Email});
