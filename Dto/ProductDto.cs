@@ -31,7 +31,7 @@ namespace FoodYeah.Dto
     public class ProductDto
     {
         public int ProductId { get; set; }
-        public Product_CategoryDto Product_Category { get; set; }
+        public Product_CategorySimpleDto Product_Category { get; set; }
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
         public Enums.DaySold SellDay { get; set; }
@@ -46,5 +46,8 @@ namespace FoodYeah.Dto
         public decimal ProductPrice { get; set; }
         public Enums.DaySold SellDay { get; set; }
         public int Stock { get; set; }
+        public string ImageUrl { get; set; }
+        public Product_CategorySimpleDto Product_Category { get; set; }
+
     }
 }

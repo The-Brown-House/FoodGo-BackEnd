@@ -120,7 +120,7 @@ namespace FoodYeah.Service.Impl
                      .Include(x => x.Product_Category)
                      .AsQueryable()
                      .Paged(page, take)
-                );
+                ); 
         }
     }
 }
