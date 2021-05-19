@@ -112,9 +112,9 @@ namespace FoodYeah.Service.Impl
                                   .Paged(page, take)
                 );
         }
-        public DataCollection<ProductDto> GetByDay(Enums.DaySold day, int page, int take)
+        public DataCollection<ProductSimpleDto> GetByDay(Enums.DaySold day, int page, int take)
         {
-            return _mapper.Map<DataCollection<ProductDto>>(
+            return _mapper.Map<DataCollection<ProductSimpleDto>>(
                      _context.Products.Where(x => x.SellDay == day)
                      .OrderBy(x => x.SellDay)
                      .Include(x => x.Product_Category)
