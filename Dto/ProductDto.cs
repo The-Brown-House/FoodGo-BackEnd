@@ -11,6 +11,10 @@ namespace FoodYeah.Dto
         public Enums.DaySold SellDay { get; set; }
         public int Stock { get; set; }
         public string ImageUrl { get; set; }
+        public string ProductDescription
+        {
+            get; set;
+        }
     }
 
     public class ProductUpdateDto
@@ -21,6 +25,10 @@ namespace FoodYeah.Dto
         public Enums.DaySold SellDay { get; set; }
         public int Stock { get; set; }
         public string ImageUrl { get; set; }
+        public string ProductDescription
+        {
+            get; set;
+        }
     }
 
     public class ProductUpdateStockDto
@@ -34,6 +42,8 @@ namespace FoodYeah.Dto
         public Product_CategorySimpleDto Product_Category { get; set; }
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
+        public string ProductDescription { get; set; }
+
         public Enums.DaySold SellDay { get; set; }
         public int Stock { get; set; }
         public string ImageUrl { get; set; }
@@ -45,6 +55,8 @@ namespace FoodYeah.Dto
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
         public Enums.DaySold SellDay { get; set; }
+        public string ProductDescription { get; set; }
+
         public int Stock { get; set; }
         public string ImageUrl { get; set; }
         public Product_CategorySimpleDto Product_Category { get; set; }

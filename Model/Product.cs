@@ -14,6 +14,8 @@ namespace FoodYeah.Model
         public List<OrderDetail> OrderDetails { get; set; }
         [Required]
         public string ProductName { get; set; }
+        public string ProductDescription { get; set; }
+
         public decimal ProductPrice { get; set; }
         public Enums.DaySold SellDay { get; set; }
         public int Stock { get; set; }

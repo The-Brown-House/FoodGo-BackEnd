@@ -14,6 +14,7 @@ namespace FoodYeah.Persistence.Config
             entityBuilder.Property(x => x.ProductId).IsRequired();
             entityBuilder.Property(x => x.ProductName).IsRequired();
             entityBuilder.Property(x => x.ProductPrice).IsRequired();
+            entityBuilder.Property(x => x.ProductDescription).IsRequired();
             entityBuilder.Property(x => x.Stock).IsRequired();
             entityBuilder.Property(x => x.ImageUrl).IsRequired();
             entityBuilder

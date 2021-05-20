@@ -36,6 +36,7 @@ namespace FoodYeah.Service.Impl
                 SellDay = model.SellDay,
                 Stock = model.Stock,
                 ImageUrl = model.ImageUrl,
+                ProductDescription = model.ProductDescription,
                 ProductId = id++
             };
 
@@ -91,6 +92,7 @@ namespace FoodYeah.Service.Impl
             entry.SellDay = model.SellDay;
             entry.Stock = model.Stock;
             entry.ImageUrl = model.ImageUrl;
+            entry.ProductDescription = model.ProductDescription;
 
             _context.SaveChanges();
         }
