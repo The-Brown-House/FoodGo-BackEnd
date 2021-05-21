@@ -13,8 +13,7 @@ namespace FoodYeah.Dto
     {
         public int ProductId { get; set; }
         public byte Quantity { get; set; }
-        public int NumberQuotes { get; set; }
-        public int Frecuency { get; set; }
+ 
     }
 
     public class OrderDto
