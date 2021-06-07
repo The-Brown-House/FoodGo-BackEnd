@@ -34,6 +34,12 @@ namespace FoodYeah.Controllers
             return _productService.GetByDay(day, page, take);
         }
 
+        [HttpGet("category/{category}")]
+        public ActionResult<DataCollection<ProductSimpleDto>> GetByCategory(int category, int page = 1, int take = 50)
+        {
+            return _productService.GetByCategory(category, page, take);
+        }
+
         // Ex: Products/1
         [HttpGet("{id}")]
         public ActionResult<ProductDto> GetById(int id)

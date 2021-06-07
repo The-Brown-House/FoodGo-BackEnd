@@ -124,5 +124,14 @@ namespace FoodYeah.Service.Impl
                      .Paged(page, take)
                 ); 
         }
+
+        public DataCollection<ProductSimpleDto> GetByCategory(int category, int page, int take)
+        {
+            return _mapper.Map<DataCollection<ProductSimpleDto>>(
+                _context.Products.Where(x=>x.Product_CategoryId == category).Include(x => x.Product_Category)
+                     .AsQueryable()
+                     .Paged(page, take)
+                );
+        }
     }
 }
