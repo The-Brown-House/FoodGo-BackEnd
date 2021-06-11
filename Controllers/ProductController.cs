@@ -40,7 +40,7 @@ namespace FoodYeah.Controllers
             return _productService.GetByCategory(category, page, take);
         }
 
-        [HttpGet("name/{name}")]
+        [HttpGet("search/{name}")]
         public ActionResult<DataCollection<ProductSimpleDto>> SearchByName(string name)
         {
             return _productService.SearchByName(name);

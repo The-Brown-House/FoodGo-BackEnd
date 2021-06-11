@@ -23,7 +23,7 @@ namespace FoodYeah.Dto
         public List<OrderDetailDto> OrderDetails { get; set; }
 
         public int CustomerId { get; set; }
-        public CustomerDto Customer { get; set; }
+        public CustomerSimpleDto Customer { get; set; }
 
         public string Date { get; set; }
         public string InitTime { get; set; }
@@ -39,7 +39,7 @@ namespace FoodYeah.Dto
         public int OrderDetailId { get; set; }
         public int OrderId { get; set; }
         public int ProductId { get; set; }
-        public ProductDto Product { get; set; }
+        public ProductSimpleDto Product { get; set; }
         public byte Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal TotalPrice { get; set; }
