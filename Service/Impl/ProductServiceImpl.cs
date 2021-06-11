@@ -142,6 +142,7 @@ namespace FoodYeah.Service.Impl
                
             return _mapper.Map<DataCollection<ProductSimpleDto>>(
                 _context.Products.Where(x => x.ProductName.ToLower().Contains(normalizedName) && normalizedName != null)
+                .Include(x=>x.Product_Category)
                     .AsQueryable()
                     .Paged(1, 100));
         }
