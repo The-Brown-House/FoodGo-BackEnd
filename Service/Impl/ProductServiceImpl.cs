@@ -5,6 +5,8 @@ using FoodYeah.Dto;
 using FoodYeah.Model;
 using FoodYeah.Persistence;
 using Microsoft.EntityFrameworkCore;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace FoodYeah.Service.Impl
 {
@@ -133,5 +135,16 @@ namespace FoodYeah.Service.Impl
                      .Paged(page, take)
                 );
         }
+
+        public DataCollection<ProductSimpleDto> SearchByName(string name) {
+
+            var normalizedName = name.ToLower();
+               
+            return _mapper.Map<DataCollection<ProductSimpleDto>>(
+                _context.Products.Where(x => x.ProductName.ToLower().Contains(normalizedName) && normalizedName != null)
+                    .AsQueryable()
+                    .Paged(1, 100));
+        }
+
     }
 }

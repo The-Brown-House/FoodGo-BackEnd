@@ -11,6 +11,7 @@ namespace FoodYeah.Service
         DataCollection<ProductDto> GetByWeek(int page, int take);
         DataCollection<ProductSimpleDto> GetByCategory(int category,int page,int take);
         DataCollection<ProductSimpleDto> GetByDay(Enums.DaySold day, int page, int take);
+        DataCollection<ProductSimpleDto> SearchByName(string name);
         ProductDto Create(ProductCreateDto model);
         void AddStock(int id, ProductUpdateStockDto model);
         void Update(int id, ProductUpdateDto model);
